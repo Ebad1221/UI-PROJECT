@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="bg-black text-gray-400 py-8 ">
       <div className="w-10/12 mx-auto">
@@ -35,12 +35,7 @@ const Footer = () => {
               <li>Sustainability</li>
             </ul>
           </div>
-           {/*<div className="flex space-x-4 text-xl">
-            <FaTwitter className="hover:text-white cursor-pointer" />
-            <FaFacebookF className="hover:text-white cursor-pointer" />
-            <FaYoutube className="hover:text-white cursor-pointer" />
-            <FaInstagram className="hover:text-white cursor-pointer" />
-          </div>*/}
+           
           <div className="flex space-x-4 text-xl">
   <span className="hover:text-white cursor-pointer">
     <FaTwitter />
@@ -72,4 +67,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;
