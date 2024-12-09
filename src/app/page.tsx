@@ -1,101 +1,147 @@
+
 import Image from "next/image";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex flex-col items-center">
+      <div className="hero-1 flex flex-col items-center justify-center bg-[#f5f5f5] p-4">
+        <h1 className="font-helvetica font-medium text-[2.5vw] leading-[3vw] text-[#111111]">
+          Hello Nike App
+        </h1>
+        <p className="text-center">
+          Download the app to access everything Nike.
+          <span className="underline font-medium">Get Your Great</span>
+        </p>
+      </div>
+      <div className="flex justify-center w-full">
         <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src={"/Image.png"}
+          alt="oops"
+          width={1200}
+          height={700}
+          className="w-full max-w-[1200px] h-auto"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </div>
+      <div className="flex justify-center mt-6 w-full">
+        <Image
+          src={"/Frame (4).png"}
+          alt="oops"
+          width={1000}
+          height={229}
+          className="w-full max-w-[1000px] h-auto"
+        />
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-between w-full p-4">
+        <h1 className="new-hero font-medium text-2xl">Best of Air Max</h1>
+        <div className="flex items-center">
+          <span className="new-hero font-semibold text-base">Shop</span>
+          <span>
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src={"/Frame (6).png"}
+              alt="oops"
+              width={48}
+              height={48}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </span>
+          <span>
+            <Image
+              src={"/Frame (5).png"}
+              alt="oops"
+              width={48}
+              height={48}
+            />
+          </span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="w-full">
+        <Image
+          src={"/Frame (8).png"}
+          alt="oops"
+          width={1440}
+          height={540.36}
+          className="w-full h-auto"
+        />
+      </div>
+      <div>
+        <h2 className="new-hero text-2xl font-medium ml-12">Featured</h2>
+      </div>
+      <div className="flex justify-center mt-6 w-full">
+        <Image
+          src={"/Image (1).png"}
+          alt="oops"
+          width={1200}
+          height={300}
+          className="w-full max-w-[1200px] h-auto"
+        />
+      </div>
+      <div className="flex justify-center items-center mt-6">
+        <h1 className="new-hero text-5xl font-medium">STEP INTO WHAT FEELS GOOD</h1>
+      </div>
+      <div className="flex justify-center items-center mt-6">
+        <p className="new-hero text-base font-normal text-center">
+          Cause everyone should know the feeling of running in that perfect pair.
+        </p>
+      </div>
+      <div className="flex justify-center items-center mt-6">
+        <button className="bg-[#111111] text-white rounded-full px-6 py-3 text-sm">
+          Find Your Shoe
+        </button>
+      </div>
+      <div className="new-hero text-2xl font-medium ml-12">Gear Up</div>
+      <div>
+        <Image
+          src={"/Frame (7).png"}
+          alt="oops"
+          width={1356}
+          height={509}
+          className="w-full h-auto"
+        />
+      </div>
+      <div className="new-hero ml-12 text-2xl font-medium">
+        <h1>Don't Miss</h1>
+        <Image
+          className="mt-4 w-full"
+          src ={"/Image (2).png"}
+          alt="oops"
+          width={1344}
+          height={700}
+        />
+      </div>
+      <div className="new-hero text-5xl font-medium flex justify-center items-center mt-6">
+        <h1>FLIGHT ESSENTIALS</h1>
+      </div>
+      <p className="new-hero font-normal text-base flex justify-center items-center mt-6">
+        Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.
+      </p>
+      <div className="flex justify-center items-center mt-6">
+        <button className="bg-[#111111] text-white rounded-full px-6 py-3 text-sm">
+          Shop
+        </button>
+      </div>
+      <div>
+        <h1 className="new-hero ml-12 text-2xl font-medium">The Essentials</h1>
+      </div>
+      <div className="flex justify-center">
+        <Image
+          className="mt-4 w-full"
+          src={"/Frame (9).png"}
+          alt="oops"
+          width={1270}
+          height={470}
+        />
+      </div>
+      <div className="flex justify-center items-center">
+        <Image
+          className="mt-24 w-full"
+          src={"/Frame (10).png"}
+          alt="oops"
+          width={880}
+          height={192}
+        />
+      </div>
+      <Footer />
     </div>
   );
 }
